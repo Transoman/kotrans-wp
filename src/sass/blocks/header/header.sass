@@ -1,0 +1,45 @@
+.header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 10
+  padding-top: 30px
+  +r(767)
+    padding-top: 10px
+  &.fixed
+    position: fixed
+    animation: slideDown 0.5s ease-in-out
+    padding: 10px 0 5px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+      width: 100%
+      height: 100%
+      background: rgba(#000, 0.95)
+      filter: blur(2px)
+      transform: scale(1.1)
+  .container
+    display: flex
+    align-items: center
+  &__logo
+    flex-shrink: 0
+    margin-right: 45px
+    +r(767)
+      max-width: 60px
+      margin-right: 0
+  &__right
+    position: relative
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    +r(1200)
+      padding-right: 50px
+  &__phone
+    margin-left: auto
+    margin-bottom: 15px
+    +r(1200)
+      margin-bottom: 0

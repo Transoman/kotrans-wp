@@ -1,0 +1,32 @@
+.list-square
+  margin: 0
+  padding: 0
+  list-style: none
+  column-count: 2
+  column-gap: 10px
+  +r(767)
+    column-count: 1
+    column-gap: 0
+  li
+    position: relative
+    margin-bottom: 10px
+    padding: 10px 0 10px 40px
+    display: inline-block
+    vertical-align: top
+    font-size: 18px
+    font-weight: 600
+    color: $dark
+    +r(767)
+      padding: 0 0 0 40px
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 22px
+      height: 22px
+      border: 5px solid $accent
+      box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.25)
+    &:last-child
+      margin-bottom: 0

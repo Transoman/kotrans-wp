@@ -1,0 +1,101 @@
+.about
+  padding-top: 160px
+  padding-bottom: 60px
+  +r(992)
+    padding-top: 110px
+  &::after
+    content: ''
+    position: absolute
+    left: 62%
+    bottom: 90px
+    width: 745px
+    height: 520px
+    background: url(images/general/about-car.png) no-repeat center / contain
+    +r(767)
+      display: none
+  .container
+    position: relative
+    z-index: 1
+  .section-title
+    +r(576)
+      br
+        display: none
+    &::before
+      +r(1499)
+        font-size: 110px
+        top: -70px
+      +r(1200)
+        font-size: 80px
+        top: -50px
+      +r(992)
+        font-size: 60px
+        top: -40px
+      +r(767)
+        font-size: 40px
+  .btn-action
+    display: flex
+    align-items: center
+    margin-top: 50px
+    margin-bottom: 110px
+    +r(992)
+      display: block
+      margin-top: 30px
+      margin-bottom: 90px
+    +r(767)
+      text-align: center
+    p
+      margin-bottom: 0
+      margin-right: 60px
+      +r(992)
+        margin-right: 0
+        margin-bottom: 20px
+    .btn
+      font-weight: 600
+      padding-right: 110px
+      +r(576)
+        padding-right: 60px
+      svg
+        width: 21px
+        height: 21px
+        fill: #fff
+        margin-right: 20px
+  &__note
+    max-width: 870px
+    padding: 50px 55px
+    background-color: $brown
+    font-size: 27px
+    font-weight: 600
+    color: #fff
+    text-align: right
+    text-transform: uppercase
+    +r(992)
+      font-size: 20px
+    +r(767)
+      padding: 20px 25px
+      font-size: 16px
+      text-align: center
+    p
+      margin: 0
+
+.about-number
+  margin-bottom: 35px
+  +r(767)
+    text-align: center
+  &__number
+    font-size: 68px
+    font-weight: 800
+    line-height: 1
+    color: $accent
+    +r(992)
+      font-size: 48px
+    +r(767)
+      font-size: 38px
+  p
+    margin: 0
+    font-size: 20px
+    font-weight: 600
+    color: #6E6E6E
+    +r(767)
+      font-size: 16px
+
+@import 'about-map'

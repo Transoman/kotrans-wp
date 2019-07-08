@@ -1,0 +1,169 @@
+.advantages
+  padding: 155px 0 100px
+  overflow: hidden
+  +r(992)
+    padding-top: 100px
+  +r(767)
+    padding: 40px 0
+  &::before
+    content: ''
+    position: absolute
+    right: 73%
+    top: 280px
+    z-index: -1
+    width: 530px
+    height: 360px
+    background: url(images/general/adv-car.jpg) no-repeat center / contain
+    +r(992)
+      display: none
+  .section-title
+    margin-bottom: 65px
+    +r(1200)
+      max-width: 540px
+    +r(992)
+      text-align: center
+      max-width: none
+    +r(767)
+      margin-bottom: 25px
+  .btn-action
+    margin-left: 300px
+    +r(1200)
+      margin-left: 100px
+    +r(992)
+      text-align: center
+      margin-left: 0
+    .btn
+      margin-left: 60px
+      +r(992)
+        margin-left: 0
+
+.advantages-tabs
+  position: relative
+  z-index: 1
+  margin-bottom: 40px
+  padding-left: 260px
+  +r(1200)
+    padding-left: 50px
+  +r(992)
+    padding-left: 0
+  &__list
+    position: absolute
+    top: -130px
+    right: 0
+    z-index: 2
+    max-width: 350px
+    +r(992)
+      position: relative
+      top: auto
+      right: auto
+      max-width: none
+      margin-bottom: 10px
+    &::after
+      content: ''
+      position: absolute
+      top: -145px
+      left: 10px
+      z-index: -1
+      width: 1000px
+      height: 690px
+      background-color: $bg-color
+      +r(1200)
+        top: -185px
+        height: 720px
+      +r(992)
+        display: none
+  &__content
+    position: relative
+    z-index: 1
+    max-width: 570px
+    padding: 65px 40px 65px 80px
+    border: 1px solid #C4C4C4
+    border-right: 0
+    background-color: #fff
+    +r(992)
+      max-width: none
+      border: 1px solid #C4C4C4
+    +r(767)
+      padding: 35px 30px 35px 50px
+    p
+      font-size: 24px
+      color: $dark
+      +r(576)
+        font-size: 18px
+      strong
+        font-weight: 700
+      &:last-child
+        margin-bottom: 0
+        &::after
+          content: ''
+          display: block
+          width: 50px
+          height: 2px
+          margin-top: 5px
+          background-color: $accent
+    &-number
+      position: absolute
+      top: 20px
+      left: 35px
+      z-index: -1
+      font-size: 100px
+      font-weight: 800
+      line-height: 1
+      color: #EFEFEF
+      +r(767)
+        font-size: 60px
+        left: 15px
+        top: 15px
+
+.advantages-tabs-list
+  margin: 0
+  padding: 0
+  list-style: none
+  +r(992)
+    display: flex
+    width: 100%
+    overflow-x: auto
+    +smooth-scroll
+  li
+    position: relative
+    margin-bottom: 35px
+    padding-left: 85px
+    font-weight: 700
+    color: #444
+    text-transform: uppercase
+    +trans
+    +r(992)
+      flex-shrink: 0
+      font-size: 12px
+      padding: 10px 0
+      margin-bottom: 0
+      margin-right: 20px
+    &::before
+      content: ''
+      position: absolute
+      top: 9px
+      left: 0
+      width: 50px
+      height: 2px
+      background-color: $accent
+      transform: translateX(20px)
+      opacity: 0
+      +trans
+      +r(992)
+        display: none
+    &:last-child
+      margin-bottom: 0
+    a
+      display: flex
+      +r(992)
+        display: block
+    span
+      margin-right: 35px
+      +r(992)
+        margin-right: 0
+    &.active
+      a
+        color: $accent
+      &::before
+        transform: translateX(0)
+        opacity: 1
