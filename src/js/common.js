@@ -150,6 +150,7 @@ jQuery(document).ready(function($) {
   // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('[href^="#adv-"]')
     .click(function(event) {
       // On-page links
       if (
@@ -187,14 +188,11 @@ jQuery(document).ready(function($) {
   // Fixed header
   let fixedHeader = function(e) {
     let header =  $('.header');
-    let h = header.innerHeight();
 
     if (e.scrollTop() > 150) {
-      // header.css('padding-bottom', h);
       header.addClass('fixed');
     }
     else {
-      // header.css('padding-bottom', 0);
       header.removeClass('fixed');
     }
   };
