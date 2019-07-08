@@ -559,7 +559,9 @@ endif;
 
         </div>
         <div class="col-lg-6">
-          <div id="contact-map" class="contact__map"></div>
+          <div id="contact-map" class="contact__map">
+            <p class="contact__map-label">Грузоперевозки <br>без проблем</p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 module.exports = function () {
   $.gulp.task('watch', function () {
-    $.gulp.watch($.path.build + '**/*.php', $.browserSync.reload);
+    $.gulp.watch($.path.build + '**/*.php', $.browserSync.reload());
     $.gulp.watch($.path.source + 'sass/**/*.sass', $.gulp.series('styles:dev'));
     $.gulp.watch([$.path.source + 'images/general/**/*.{png,jpg,gif,svg}',
       $.path.source + 'images/content/**/*.{png,jpg,gif,svg}'], $.gulp.series('img:dev'));
